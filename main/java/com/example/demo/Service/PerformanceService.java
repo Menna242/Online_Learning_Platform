@@ -42,9 +42,31 @@ public class PerformanceService {
         int totalAssignments = assignments.size();
 
         // Build Response
-        return "Student ID: " + studentId +
-                "\nTotal Assignments Submitted: " + totalAssignments +
-                "\nTotal Quiz Score: " + totalScore +
-                "\nTotal Attendance: " + totalAttendance;
+        StringBuilder response = new StringBuilder();
+        response.append("Student ID: ").append(studentId)
+                .append("\nTotal Assignments Submitted: ").append(totalAssignments)
+                .append("\nTotal Quiz Score: ").append(totalScore)
+                .append("\nTotal Attendance: ").append(totalAttendance)
+                .append("\n");
+
+        // List all quiz IDs and scores
+        response.append("\nQuiz Results:\n");
+        for (Result result : results) {
+            response.append("Quiz ID: ").append(result.getQuiz().getQuizID())
+                    .append(", Score: ").append(result.getScore()).append("\n");
+        }
+
+        // List all assignment names
+        response.append("\nAssignments Submitted:\n");
+        for (Assigment assignment : assignments) {
+            response.append(assignment.getName()).append("\n");
+        }
+
+        // List all lessons attended
+        response.append("\nLessons Attended:\n");
+        for (Attendence attendance : attendanceRecords) {
+            response.append("Lesson: ").append(attendance.getLesson()).append("\n");
+        }
+        return response.toString();
     }
 }
