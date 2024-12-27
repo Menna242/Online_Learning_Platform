@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Assigment {
+    //primary key
     @Id
     @Column(name = "AssignID")
     private Long assignID;
@@ -24,7 +25,7 @@ public class Assigment {
 
     @Column(name = "grade", nullable = true)
     private Integer grade; // Grade assigned to the assignment
-
+    //Connected to Student database 
     @ManyToOne
     @JoinColumn(name = "USER_ID") // Foreign key in AssigmentDB
     private Student student;
