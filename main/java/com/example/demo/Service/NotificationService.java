@@ -4,6 +4,8 @@ import com.example.demo.Entity.Notifications;
 import com.example.demo.Entity.User;
 import com.example.demo.Repositary.NotificationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
