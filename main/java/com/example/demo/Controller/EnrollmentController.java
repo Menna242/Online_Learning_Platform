@@ -33,13 +33,3 @@ public class EnrollmentController {
 
 }
 
-
-//{
-//        "student": {
-//        "id": 1
-//        },
-
-//        "course": {
-//        "id": 2
-//        }
-//}
