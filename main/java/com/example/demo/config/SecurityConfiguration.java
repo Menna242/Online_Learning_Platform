@@ -25,7 +25,6 @@ public class SecurityConfiguration {
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config)  throws Exception{
         return config.getAuthenticationManager();
-
     }
 
     @Bean
@@ -84,5 +83,4 @@ public class SecurityConfiguration {
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
                 return http.build();
-    }
-}
+    }}
