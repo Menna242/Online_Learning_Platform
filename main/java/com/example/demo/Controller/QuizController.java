@@ -33,17 +33,6 @@ public class QuizController {
         return quizService.createQuiz(quiz);
     }
 
-    // get quiz
-//    @GetMapping("/{id}")
-//    public Quiz getQuiz(@PathVariable int id) {
-//        return quizService.getQuizById(id);
-//    }
-//
-//    @GetMapping("/getAll")
-//    public List<Quiz> getAllQuizzes() {
-//        return quizService.getAllQuizzes();
-//    }
-
     // create random question quiz
     @PostMapping("/course/{courseId}/create-quiz")
     // param path\param from request param in postman
