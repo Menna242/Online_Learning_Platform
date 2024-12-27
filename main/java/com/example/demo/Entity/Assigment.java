@@ -18,6 +18,7 @@ public class Assigment {
     private String name;
     @Column(name = "Feedback")
     private String feedback;
+    
     @Column(name = "submission", nullable = true)
     private String submission; // URL or path to the submitted file
 
