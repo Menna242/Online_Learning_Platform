@@ -1,4 +1,3 @@
-// mariam
 package com.example.demo.Repositary;
 
 import com.example.demo.Entity.Quiz;
