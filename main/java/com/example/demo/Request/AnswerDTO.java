@@ -1,4 +1,3 @@
-// mariam
 package com.example.demo.Request;
 
 import jakarta.validation.constraints.NotNull;
@@ -24,5 +23,4 @@ public class AnswerDTO {
         this.answer = answer;
     }
 
-    // Getters and Setters
 }
