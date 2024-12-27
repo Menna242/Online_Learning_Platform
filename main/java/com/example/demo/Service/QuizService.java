@@ -46,15 +46,6 @@ public class QuizService {
         return quizRepository.save(quiz);
     }
 
-
-//    public Quiz getQuizById(int id) {
-//        return quizRepository.findById(id).orElse(null);
-//    }
-//
-//    public List<Quiz> getAllQuizzes() {
-//        return quizRepository.findAll();
-//    }
-
     // add question
     public Quiz addQuestionsToQuiz(int quizId, Question question) {
         // get quiz optional <question>
