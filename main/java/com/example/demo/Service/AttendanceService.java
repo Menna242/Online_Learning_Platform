@@ -52,9 +52,7 @@ public class AttendanceService {
             }
             else{
                 return null;
-            }
-
-        }
+            }  }
         else {
             return null;
 
