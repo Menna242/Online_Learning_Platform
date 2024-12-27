@@ -48,11 +48,6 @@ public class Course {
     @JsonManagedReference
     private List<lesson> lessons;
 
-    //    @ElementCollection
-//    @CollectionTable(name = "course_media_files", joinColumns = @JoinColumn(name = "course_id"))
-//    @Column(name = "MEDIA_FILES")
-//    private List<String> mediaFiles;
-
     public Long getCourseId() {
         return courseId;
     }
