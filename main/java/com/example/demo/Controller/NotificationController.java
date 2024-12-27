@@ -4,7 +4,6 @@ import com.example.demo.Entity.Notifications;
 import com.example.demo.Service.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -27,5 +26,4 @@ public class NotificationController {
     @PutMapping("/{notifyID}/read")
     public Optional<Notifications> markAsRead(@PathVariable Long notifyID) {
         return notificationService.markAsRead(notifyID);
-    }
-}
+    }}
