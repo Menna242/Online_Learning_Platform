@@ -1,5 +1,7 @@
 package com.example.demo.Repositary;
 
+
+
 import com.example.demo.Entity.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 
