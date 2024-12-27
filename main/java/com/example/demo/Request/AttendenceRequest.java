@@ -13,6 +13,6 @@ public class AttendenceRequest {
     private long lessonid;
     private String otp;  // OTP entered by student
 
-   // private boolean attendanceStatus;
+  
 
 }
