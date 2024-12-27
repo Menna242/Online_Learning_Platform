@@ -29,7 +29,7 @@ public class LessonController {
         return savedLesson;
     }
 
-
+ // delete
     @DeleteMapping("/deleteLesson/{id}")
     public String deleteLesson(@PathVariable Long id) {
         lessonService.deleteLessonById(id);
