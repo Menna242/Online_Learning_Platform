@@ -37,8 +37,6 @@ public class EnrollmentService {
     public Enrollment createEnrollment(EnrollmentRequest enrollmentRequest) {
         Optional<Student> student = studentRepo.findById(enrollmentRequest.getStudentid());
         Optional<Course> course = courseRepo.findById(enrollmentRequest.getCourseid());
-//        System.out.println(student);
-//        System.out.println(course);
 
         if(course.isPresent()&&student.isPresent()){
             Student newStudent = student.get();
@@ -68,7 +66,7 @@ public class EnrollmentService {
     public List<Student> getStudentsByCourseId(Long courseId) {
         List<Enrollment> enrollments = enrollmentRepository.findByCourse_CourseId(courseId);
         return enrollments.stream()
-                .map(Enrollment::getStudent) //
+                .map(Enrollment::getStudent) 
                 .collect(Collectors.toList());
     }
 
