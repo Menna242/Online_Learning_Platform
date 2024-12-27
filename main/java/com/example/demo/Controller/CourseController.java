@@ -33,6 +33,7 @@ public class CourseController {
         return savedCourse;
     }
 
+    
     @GetMapping("/allCourses")
     public List<Course>getallCourses(){
         return courseService.getAllCourses();
@@ -44,6 +45,7 @@ public class CourseController {
         return (courseService.getCourseById(id));
     }
 
+    
     @GetMapping("/course/instructor/{instructorId}")
     public List<Course> getCoursesByInstructorId(@PathVariable Long instructorId) {
         return (courseService.getCoursesByInstructorId(instructorId));
