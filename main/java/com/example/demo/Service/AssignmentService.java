@@ -1,8 +1,6 @@
 package com.example.demo.Service;
-
 import com.example.demo.Entity.Student;
 import com.example.demo.Repositary.AssigmentRepo;
-
 import com.example.demo.Repositary.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,7 +48,7 @@ public class AssignmentService {
         return assignmentRepository.save(assignment);
     }
 
-    // Add Assignment
+    // Add Assignment by instructor
     public Assigment createAssignment(Assigment assignment) {
         // just save updates [object of assignment]
         return assignmentRepository.save(assignment);
