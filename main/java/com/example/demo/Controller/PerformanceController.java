@@ -1,5 +1,4 @@
 package com.example.demo.Controller;
-
 import com.example.demo.Service.PerformanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/auth/performance")
 public class PerformanceController {
 
-    // to make functionality
+    // to make functionality with performance service
     @Autowired
     private PerformanceService performanceService;
 
