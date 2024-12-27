@@ -1,6 +1,4 @@
 package com.example.demo.Controller;
-
-
 import com.example.demo.Entity.User;
 import com.example.demo.Service.ProfileManagmentServices;
 import lombok.RequiredArgsConstructor;
@@ -9,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/Profile")
 @RequiredArgsConstructor
+//update profile and view profile 
 public class ProfileManagmentController {
     private final ProfileManagmentServices profileManagmentServices;
     @GetMapping("/viewProfile/{USER_ID}")
