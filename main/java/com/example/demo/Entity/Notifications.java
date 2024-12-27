@@ -19,7 +19,7 @@ public class Notifications {
     @ManyToOne
     @JoinColumn(name = "userid",referencedColumnName = "USER_ID",nullable = false)
     private User user;
-
+    //to be able to check if he wants all notifications or just unread one
     @Column(name = "isRead")
     private boolean isRead;
 
