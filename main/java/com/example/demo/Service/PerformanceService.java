@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-
 public class PerformanceService {
     // to deal with assignment database
     @Autowired
@@ -26,7 +25,7 @@ public class PerformanceService {
     @Autowired
     private AttendecnceRepo attendanceRepository;
 
-    // track performance
+    // track performance for a certain student
     public String getStudentPerformance(Long studentId) {
         // Fetch Assignments for a student
         List<Assigment> assignments = assignmentRepository.findByStudent_Id(studentId);
