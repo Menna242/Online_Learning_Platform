@@ -33,7 +33,8 @@ public class CourseTest {
 
     @BeforeEach
     public void setup() {
-        MockitoAnnotations.openMocks(this); // Initializes mocks and injects them
+        // Initializes mocks and injects them
+        MockitoAnnotations.openMocks(this); 
     }
 
     @Test
@@ -78,7 +79,7 @@ public class CourseTest {
 
         verify(courseRepo, times(1)).save(any(Course.class));
     }
-
+//-----------------------------------------------------------------------------------------------------------------------------------------
 
     @Test
     public void findAllCourses_WithInstructorID(){
