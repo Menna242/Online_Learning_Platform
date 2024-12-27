@@ -117,6 +117,7 @@ public class EnrollmentTest {
         // Verify Repository Save Call
         verify(enrollmentRepo, times(1)).save(any(Enrollment.class));
     }
+//-----------------------------------------------------------------------------------------------------------------------------------------
 
     @Test
     public void testFindAllStudentInCourseId() {
@@ -171,7 +172,6 @@ public class EnrollmentTest {
 
         assertTrue(result.contains(student));
 
-        // Verify interactions
         verify(enrollmentRepo, times(1)).findByCourse_CourseId(course.getCourseId()); // Correct interaction
     }
 
