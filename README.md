@@ -1,4 +1,3 @@
-# LMS Java-Backend Application
 # Online Learning Platform Backend  
 
 ## Project Overview  
