@@ -16,4 +16,5 @@ This is a backend system for an online learning platform developed using Java Sp
 - **Notifications**:  
   - Students receive notifications for grades and updates.  
   - Instructors receive notifications about submissions.
-Using Mysql Database 
+## Used Database : MYSQL
+## API : PostMan To Test Endpoints
