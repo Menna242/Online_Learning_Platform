@@ -1,5 +1,4 @@
-# Online Learning Platform Backend  
-
+# Online Learning Platform
 ## Project Overview  
 This is a backend system for an online learning platform developed using Java Spring Boot and secured with JWT. It includes user authentication, course management, and progress tracking functionalities.  
 
